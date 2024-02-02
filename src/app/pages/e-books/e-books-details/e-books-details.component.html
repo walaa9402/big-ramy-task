@@ -1,0 +1,11 @@
+<ng-container *ngIf="model">
+  <a class="title" [routerLink]="['/e-books/list']">
+    <h3>
+      <span class="back">
+        {{'<'}} </span>
+          {{model.attributes.name}}
+    </h3>
+
+  </a>
+  <img [src]="model.attributes.book.image_url" alt="" width="500">
+</ng-container>

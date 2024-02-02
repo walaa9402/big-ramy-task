@@ -1,0 +1,36 @@
+.navbar {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &-brand {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  &-nav {
+    flex-direction: row !important;
+    justify-content: flex-end;
+
+    .nav-link {
+      color: #333;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+
+  &.bg-light {
+    background-color: #f8f9fa;
+  }
+
+  &.navbar-expand-lg {
+    @media (max-width: 992px) {
+      .navbar-collapse {
+        position: relative;
+      }
+    }
+  }
+}

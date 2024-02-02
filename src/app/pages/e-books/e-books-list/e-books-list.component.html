@@ -1,0 +1,4 @@
+<ng-container *ngFor="let book of listOfEBooks">
+  <app-card [card_title]="book.attributes.name" [card_image]="book.attributes.book.image_url"
+    [button_title]="'Show Details'" [button_route]="'/e-books/details/'+book.id" />
+</ng-container>
